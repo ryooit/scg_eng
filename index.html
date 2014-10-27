@@ -11,6 +11,8 @@
 
     <title>System Consultant Group</title>
 
+    <link href="css/stylesheet.css" rel="stylesheet">
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,7 +22,6 @@
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
@@ -40,7 +41,7 @@
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#services">What we Do</a>
+                <a href="#services">What We Do</a>
             </li>
             <li>
                 <a href="#portfolio">Projects</a>
@@ -53,7 +54,7 @@
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
+        <div class="text-vertical-center" id="front">
             <h1>System Consultant Group</h1>
             <h3>Sungkyunkwan University</h3>
             <br>
@@ -67,7 +68,17 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Who are we?</h2>
-                    <p class="lead">We are the official affiliated organization of the college of Information and Communication in Sungkyunkwan University. We are focused on training selected students so that they could be able to operate the partial systems and networks in Sungkyunkwan University.</p>
+                    <hr class="long">
+                    <div class="wrapper">
+                        <!-- <img src="img/logoSCG.png" alt="SCG-logo" id="logo"> -->
+                        <p class="lead">We are 
+                            <span class="blue">the official affiliated organization</span>
+                             of the college of Information and Communication in
+                            <span class="blue">Sungkyunkwan University</span>
+                            . We are focused on training selected students so that they could be able to operate the partial 
+                            <span class="blue">systems and networks</span>
+                             in Sungkyunkwan University.</p>
+                    </div>
                 </div>
             </div>
             <!-- /.row -->
@@ -82,7 +93,7 @@
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>What We Do?</h2>
-                    <hr class="small">
+                    <hr class="long">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
@@ -94,6 +105,18 @@
                                     <strong>Web Services</strong>
                                 </h4>
                                 <p>Development, operation, design and web design</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-file-code-o fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>IT Services</strong>
+                                </h4>
+                                <p>Undergraduate mail services, Graduate work paper management system, Teaching assignment system, University Homepage and PC Lab 1 management services</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -112,24 +135,12 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>PC Labs</strong>
                                 </h4>
                                 <p>PC Lab 1, PC Lab 3, PC Lab 4, State-of-the-art classroom and printers management</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>IT Services</strong>
-                                </h4>
-                                <p>Undergraduate mail services, Graduate work paper management system, Teaching assignment system, University Homepage and PC Lab 1 management services</p>
                             </div>
                         </div>
                     </div>
@@ -144,43 +155,76 @@
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
+        <div class="container" id="portfolio">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>Recent Projects</h2>
-                    <hr class="small">
+                    <hr class="long">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                                Description of this thing that you worked on. Description of this thing that you worked on. Description of this thing that you worked on. Description of this thing that you worked on.
-                            </div>
+                        <div class="controls">
+                            <button class="filter" data-filter="all">All</button>
+                            <button class="filter" data-filter=".javascript">Javascript</button>
+                            <button class="filter" data-filter=".php">PHP</button>
+                            <button class="filter" data-filter=".nodejs">Node.js</button>
+                            <button class="filter" data-filter=".jquery">jQuery</button>
+                            <button class="filter" data-filter=".jsp">JSP</button>
+                            <button class="filter" data-filter=".struts">Struts2</button>
                         </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                                Description of this thing that you worked on. Description of this thing that you worked on. Description of this thing that you worked on. Description of this thing that you worked on.
+                        <div id="Box" class="box">
+                            <div class="mix javascript">
+                                <img class="img-portfolio img-responsive" src="img/sst_screen.png">
+                                Develop Samsung Electronics S/W Manpower Training (SST, STP, SCSC) Guide Page (PM : 홍성인) – HTML, javascript
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                                Description of this thing that you worked on. Description of this thing that you worked on. Description of this thing that you worked on. Description of this thing that you worked on.
+                            <div class="mix nodejs jquery">
+                                <img class="img-portfolio img-responsive" src="img/exam_screen.png">
+                                Reconstruct Classroom Allocate System for Exams (PM : 강성현) – Node.js, jQuery
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                                Description of this thing that you worked on. Description of this thing that you worked on. Description of this thing that you worked on. Description of this thing that you worked on.
+                            <div class="mix jsp struts">
+                                <img class="img-portfolio img-responsive" src="img/schoolsys_page.png">
+                                Reconstruct Classroom Allocate System (PM : 손준일) – JSP, Struts2 Framework
                             </div>
+                            <div class="mix nodejs jquery">
+                                <img class="img-portfolio img-responsive" src="img/1pc_page.png">
+                                Develop PC Lab 1 Management Page (PM : 강성현) – Node.js, jQuery                                
+                            </div>
+                            <div class="mix jsp struts">
+                                <img class="img-portfolio img-responsive" src="img/icc_screen.png">
+                                Reconstruct Information and Communication Homepage Design and Internal Systems (PM : 이범석) – JSP, Struts2 Framework
+                            </div>
+                            <div class="mix jsp struts">
+                                <img class="img-portfolio img-responsive" src="img/graduate.png">
+                                Reconstruct Graduate Work Paper Management System (PM : 송인용) – JSP, Struts2 Framework
+                            </div>
+                            <div class="mix php">
+                                <img class="img-portfolio img-responsive" src="img/classroomSystem.png">
+                                Develop Classroom Allocate System for Exams (PM : 김재성) - PHP
+                            </div>
+                            <div class="mix jsp struts">
+                                <img class="img-portfolio img-responsive" src="img/graduateWeb.png">
+                                Develop Graduate School Web Page (PM : 한덕) – JSP, Struts2 Framework
+                            </div>
+                            <div class="mix jsp struts">
+                                <img class="img-portfolio img-responsive" src="img/Brazil.png">
+                                Develop Brazil Promotion English Blog (PM : 진주영) – JSP, Struts2 Framework
+                            </div>
+                            <div class="mix jsp struts">
+                                <img class="img-portfolio img-responsive" src="img/EngIcc.png">
+                                Develop English ICC Hompage (PM : 이민호) - JSP, Struts2 Framework
+                            </div>
+                            <div class="mix php">
+                                <img class="img-portfolio img-responsive" src="img/eeeCse.png">
+                                Develop the Department Web Pages of Computer Engineering and Electronic and Electrical Engineering (PM : 전인아) – PHP, Codeigniter Framework
+                            </div>
+                            <div class="mix jsp struts">
+                                <img class="img-portfolio img-responsive" src="img/KorICC.png">
+                                Renewal ICC Web Page of Design (PM : 임성준)
+                            </div>
+                            <div class="mix php">
+                                <img class="img-portfolio img-responsive" src="img/classroomOrigin.png">
+                                Develop Classroom Allocation System (PM : 전인아) – PHP
+                            </div>
+                            <div class="gap"></div>
+                            <div class="gap"></div>
                         </div>
                     </div>
                 </div>
@@ -192,34 +236,16 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Contact</strong>
-                    </h4>
+                    <h3><i class="fa fa-send fa-fw"></i><strong> Contact</strong></h3><br>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
-                        </li>
+                        <li>22220, Engineering Building 1, Sungkyunkwan University Natural Sciences Campus</li>
                     </ul>
                     <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="LINK TO FACEBOOK"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="LINK TO TWITTER"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="LINK TO GITHUB"><i class="fa fa-github-alt fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="LINK TO LINKEDIN"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Name 2014</p>
+                    <p class="text-muted">Copyright &copy; System Consultant Group 2014</p>
                 </div>
             </div>
         </div>
@@ -229,7 +255,10 @@
     <script src="js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>>
+
+    <!-- Mixitup jQuery -->
+    <script src="js/jquery.mixitup.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -260,6 +289,11 @@
                 }
             }
         });
+    });
+
+    //mixitup
+    $(function(){
+        $('#Box').mixItUp();
     });
     </script>
 
